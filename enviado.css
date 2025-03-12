@@ -1,0 +1,51 @@
+body {
+    background: white;
+}
+.caixa{
+    background: #800000;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0 0 0 70px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    margin: 0 120px 0 0;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #363636,
+    0 3px 0 #4F4F4F,
+    0 4px 0 #696969,
+    0 5px 0 	#808080,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+#principal{
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    color: #8B0000;
+    font-weight: bold;
+}
+
+.mapa {
+    padding: 5px;
+}

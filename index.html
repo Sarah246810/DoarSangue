@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Informações do Paciente</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="caixa">
+
+            <h1>Laborátorio Vidas</h1>
+            <h2>LV</h2>
+
+    </header>
+    <div id="principal">
+        <h3 class="titulo">QUAL A IMPORTÂNCIA DE DOAR SANGUE?</h3>
+
+        <p class="block">A doação voluntária de sangue é o que permite o abastecimento dos bancos de sangue. 
+            Sem a ajuda de doadores, não é possível atender à demanda de cirurgias e de outros 
+            procedimentos cruciais para a vida de determinados pacientes.</p>
+
+        <p class="block">Anualmente, o Brasil coleta, em média, 3,6 milhões de bolsas.
+             Isso corresponde a 1,8% da população doando sangue, o que,
+              de acordo com a Organização Mundial da Saúde (OMS), está dentro
+               da média de doadores esperada em um país — entre 1% e 3%.</p>
+
+        <p class="block">Apesar disso, em algumas épocas do ano, há uma baixa nas doações, 
+            o que gera um alerta e faz com que os estoques de sangue fiquem 
+            praticamente zerados. Por esse motivo, é importante incentivar 
+            esse hábito, cabendo ao Ministério da Saúde trabalhar incessantemente para aumentar esse índice.</p>
+
+        <h3 class="subtitulo">4 MOTIVOS PARA DOAR SANGUE</h3>
+
+        <img src="sangue.jpg" alt="campanha-de-doação" class="imagemdoacao"  >
+
+        <p class="desblock"><strong> 1. Cada doação ajuda até quatro pessoas </strong>
+            <br>A doação de sangue é um ato que pode salvar a vida 
+            de até quatro pessoas. Um exemplo disso são pacientes que 
+            precisam de transfusão de sangue, seja por cirurgias, seja 
+            por traumas, seja em outras situações que exigem a reposição
+            rápida de grandes quantidades de sangue.
+        </p>
+
+        <p class="desblock"><strong>2. O sangue é insubstituível</strong>
+            <br>Já existem substâncias sintéticas que podem desacelerar 
+            a necessidade de transfusão de sangue, mas não há como substituí-lo 
+            de forma definitiva. Por isso, a única maneira de atender pacientes 
+            que necessitam do sangue é por meio da doação.
+        </p>
+
+        <p class="desblock"><strong>3. A doação de sangue não oferece riscos de contaminação</strong>
+            <br>Para doar sangue, é necessário passar por uma entrevista clínica e estar de acordo 
+            com os critérios de doação definidos pelo Ministério da Saúde e pela Agência Nacional 
+            de Vigilância Sanitária (Anvisa).
+
+            Além disso, os itens usados na coleta são esterilizados e descartáveis, e o sangue, 
+            por sua vez, passa por testes laboratoriais antes de ser utilizado para o atendimento de pacientes.
+            
+            Todos esses procedimentos garantem a segurança e a prevenção de doenças, tanto para quem doa quanto para quem recebe.
+        </p>
+
+        <p class="desblock"><strong>4. O sangue doado é restabelecido rapidamente</strong>
+            <br>O sangue doado não faz falta nenhuma para a saúde e o bem-estar de quem doa.
+
+            Homens e mulheres na fase adulta possuem cerca de 5 litros de sangue no organismo. 
+            Durante uma doação de sangue, são coletados 450 ml — 8% do volume total —, e o corpo consegue 
+            repor essa fração em até 24 horas após o ato.
+        </p>
+
+
+    </div>
+
+    <main>
+        
+        <h4 class="incentivo">SE CADASTRE NO NOSSO BANCO DE DADOS PARA DOAR SANGUE. SALVE VIDAS!</h4>
+
+        <form>    
+
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" pattern="^[A-Za-z ]+$" required>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" class="input-padrao" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" class="input-padrao" placeholder="xxx.xxx.xxx-xx" pattern="([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})" maxlength="14" required>
+
+            <label for="contato">Contato</label>
+            <input type="tel" id="contato" class="input-padrao" placeholder="(xx) xxxxx-xxxx" maxlength="11" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+
+            <label for="datanascimento">Data de Nascimento</label>
+            <input type="date" id="datanascimento" class="input-padrao" required>
+            
+            <fieldset>
+                <legend class="teste" id="teste"> Sexo </legend>
+                <label for="radio-feminino"><input type="radio" name="sexo" value="feminino" id="radio-feminino"  required="required">Feminino</label>
+                
+
+                <label for="radio-masculino"><input type="radio" name="sexo" value="masculino" id="radio-masculino"  required="required">Masculino</label>
+                
+
+                <label for="radio-outros"><input type="radio" name="sexo" value="outro" id="radio-outros"  required="required">Outro</label>
+                
+            </fieldset>
+
+            <div class="sangue">
+                <p>Tipo Sanguíneo</p>
+                <select>
+                    <option  required="required">A+</option>
+                    <option  required="required">B+</option>
+                    <option  required="required">O+</option>
+                    <option  required="required">AB+</option>
+                    <option>A-</option>
+                    <option>B-</option>
+                    <option>O-</option>
+                    <option>AB-</option>
+                </select>
+            </div>            
+
+            <a href="enviado.html" class="enviar">
+                    Enviar Formulário
+            </a>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
+
